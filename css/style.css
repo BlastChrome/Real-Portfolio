@@ -10,7 +10,11 @@
     padding: 0;  
     margin: 0; 
     font-family: 'Catamaran', Arial, Helvetica, sans-serif;
-} 
+}  
+
+body{
+    min-width: 535px;
+}
 
 /* NAV */
 #nav-container{
@@ -75,3 +79,17 @@
 
 
 
+@media screen and (min-width: 768px){
+
+    #nav-container{
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-between;  
+    } 
+    #brand{
+        padding-left: 1rem;
+    } 
+    #nav-bar{
+        padding-right: 1rem;
+    }
+}
