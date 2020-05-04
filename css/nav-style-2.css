@@ -1,0 +1,43 @@
+.nav-showcase{
+    background: lightpink; 
+    display: flex; 
+    flex-direction: column;   
+    justify-content: space-around;  
+    background: url(/imgs/caspar-camille-rubin-fPkvU7RDmCo-unsplash.jpg) no-repeat center center/cover;
+    
+}
+
+#nav-container{
+    /* background: lightgoldenrodyellow;  */
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    height: 22.5vh;
+    z-index: 1; 
+    color: white;
+} 
+
+#nav-bar{
+    display: flex; 
+} 
+
+.nav-item{
+    color: white;
+}
+
+.nav-header{
+    display: flex; 
+    flex-direction: column;  
+    align-items: center; 
+    justify-content: center;
+    /* background: lightgreen;  */
+    height: 22.5vh;  
+    color: white;
+} 
+.nav-header span{
+    display: inline-block;
+}
+
+.nav-header h1{
+    margin: 1.2rem 1.2rem;
+}
