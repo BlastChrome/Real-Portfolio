@@ -4,7 +4,16 @@
     flex-direction: column;   
     justify-content: space-around;  
     background: url(/imgs/caspar-camille-rubin-fPkvU7RDmCo-unsplash.jpg) no-repeat center center/cover;
-    
+
+} 
+
+.nav-wrap{ 
+    position: absolute;
+    background: rgba(41, 34, 27, .65); 
+    width: 100%;  
+    height: 45vh;
+    z-index: 1;
+
 }
 
 #nav-container{
@@ -12,16 +21,17 @@
     display: flex; 
     justify-content: space-around; 
     align-items: center; 
-    height: 22.5vh;
-    z-index: 1; 
+    height: 22.5vh; 
     color: white;
 } 
 
 #nav-bar{
     display: flex; 
+    z-index: 2;
 } 
 
 .nav-item{
+   
     color: white;
 }
 
