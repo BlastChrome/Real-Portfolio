@@ -1,53 +1,69 @@
-.nav-showcase{
-    background: lightpink; 
-    display: flex; 
-    flex-direction: column;   
-    justify-content: space-around;  
-    background: url(/imgs/caspar-camille-rubin-fPkvU7RDmCo-unsplash.jpg) no-repeat center center/cover;
-
-} 
-
-.nav-wrap{ 
-    position: absolute;
-    background: rgba(41, 34, 27, .65); 
-    width: 100%;  
-    height: 45vh;
-    z-index: 1;
-
-}
-
+/* styling for the first nav */
 #nav-container{
-    /* background: lightgoldenrodyellow;  */
-    display: flex; 
-    justify-content: space-around; 
-    align-items: center; 
-    height: 22.5vh; 
-    color: white;
+    position: top;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;  
+    background: brown;
+    min-height: 8vh;
+
+} 
+#brand{
+    margin: 1rem 0; 
+    font-size: 1.2rem; 
+    text-transform: uppercase; 
+    color: #fff;
 } 
 
-#nav-bar{
-    display: flex; 
-    z-index: 2;
-} 
-
-.nav-item{
-   
-    color: white;
+#brand-decoration{
+    font-size: 1.5rem;
+    margin: 0 1.0rem;
 }
 
-.nav-header{
+#nav-bar{ 
     display: flex; 
-    flex-direction: column;  
-    align-items: center; 
-    justify-content: center;
-    /* background: lightgreen;  */
-    height: 22.5vh;  
-    color: white;
-} 
-.nav-header span{
-    display: inline-block;
-}
+    flex-direction: row;  
+    align-items: center;
+    justify-content: space-between; 
+    /* width: 100vw; */
 
-.nav-header h1{
-    margin: 1.2rem 1.2rem;
+} 
+
+#nav-bar li {
+
+    margin: 0;
+    font-size: 0.3rem;
+    z-index: 0;
+    /* background-color: rgba(41, 34, 27, .65);  */
+    padding: 1.0rem; 
+} 
+#nav-bar li a{
+    margin:  0 0.8rem ;
+    height: 100%;
+    color: #fff;
+    font-size: 1.2rem;
+}  
+
+#nav-bar li:hover{
+    background-color: rgba(53, 44, 36, 0.65); 
+} 
+
+
+@media screen and (min-width: 768px){
+    #nav-container{
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-between;  
+        background: brown;
+    } 
+    #brand{
+        padding-left: 1rem;
+        
+    } 
+    #nav-bar{
+        padding-right: 1rem;     
+    }
 }

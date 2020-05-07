@@ -1,13 +1,14 @@
 /* styling for the first nav */
 #nav-container{
-    position: fixed;
-    z-index: 3;
+    position: absolute;
+    z-index: 1;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 8vh;
+    min-height: 8vh;
     color: #fff;  
+    background-color: rgba(41, 34, 27, .65);
 } 
 #brand{
     margin: 1rem 0; 
@@ -24,25 +25,32 @@
     display: flex; 
     flex-direction: row;  
     align-items: center;
-    justify-content: space-around; 
+    justify-content: space-between; 
     /* width: 100vw; */
 } 
 
 #nav-bar li {
+
     margin: 0;
     font-size: 0.3rem;
     z-index: 0;
     background-color: rgba(41, 34, 27, .65); 
-    padding: .5rem; 
+    padding: 1.0rem; 
 } 
 #nav-bar li a{
+    margin:  0 0.8rem ;
+    height: 100%;
     color: #fff;
     font-size: 1.2rem;
 }  
 
 #nav-bar li:hover{
     background-color: rgba(53, 44, 36, 0.65); 
-} 
+}  
+
+.selected{
+    background-color: red;
+}
 
 
 @media screen and (min-width: 768px){
