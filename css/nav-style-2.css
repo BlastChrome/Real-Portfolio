@@ -7,7 +7,9 @@
     flex-direction: column;
     align-items: center;
     color: #fff;  
-    background: brown;
+    /* background: #c68225; */ 
+    /* background: #29221b;  */ 
+    background: #56423c;
     min-height: 8vh;
 
 } 
@@ -57,7 +59,7 @@
         display: flex; 
         flex-direction: row; 
         justify-content: space-between;  
-        background: brown;
+        background: #29221b;
     } 
     #brand{
         padding-left: 1rem;
