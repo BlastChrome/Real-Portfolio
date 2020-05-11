@@ -14,6 +14,7 @@
 body{
     min-width: 235px;
 } 
+/* MOBILE FIRST SECTION */
 
 /* HOME PAGE */
 /* Banner */  
@@ -50,13 +51,13 @@ body{
     background: #FFF7e7;
     font-size: 1.1rem; 
     line-height: 2.5rem; 
+    padding-bottom: 15vh;
 } 
 .about-wrap{
     margin-top: 4rem;
     display: flex; 
     flex-direction: column;
     width: 90%; 
-    /* background-color: darkcyan;     */
 }
 #about-header{
     align-self: center;
@@ -67,42 +68,48 @@ body{
 
 /* PORTFOLIO PAGE END */
 
-
 /* FOOTER */ 
 footer{
     height: 15vh;
-    /* background-color: rgba(41, 34, 27, .65);    */
-    /* background: #c68225; */ 
-    /* background: rgb(133, 84, 69);  */ 
     background: #473522;
     color: #fff;
     display: flex;
     flex-direction: column; 
     justify-content: space-around;
     align-items: center;
+} 
 
-} 
-.footer-link-container{
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-} 
 .footer-links{
     display: flex; 
-    
-    /* background: red;   */
 } 
 .link-item{
     margin: 1rem;
     color: white;
 }
 .footer-social{
-    /* display: flex;  */
     flex-direction: row;
 }
-
-
 /* FOOTER END */
-/* Universal styling end */
+/* MOBILE FIRST SECTION  END*/ 
+
+
+/* MEDIA QUERIES */ 
+/* HOME */ 
+/* HOME END */ 
+
+/* PORTFOLIO  */ 
+/* PORTFOLIO END */ 
+
+/* ABOUT */ 
+/* ABOUT END */ 
+
+/* SERVICES */ 
+/* SERVICES END */ 
+
+/* CONTACT */ 
+/* CONTACT END */
+
+/* Universal styling END */ 
+
+
 
