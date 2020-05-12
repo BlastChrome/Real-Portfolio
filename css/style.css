@@ -12,7 +12,8 @@
     font-weight: 100;
 }  
 body{
-    min-width: 235px;
+    /* min-width: 235px; */
+    width: 100vw;
 } 
 /* MOBILE FIRST SECTION */
 
@@ -41,6 +42,9 @@ body{
 .about-item{
     padding: 1rem 0; 
     font-weight: 600;
+} 
+.about-item h1{
+    font-weight: 500;
 }
 
 .about-body{
@@ -61,6 +65,10 @@ body{
 }
 #about-header{
     align-self: center;
+    
+} 
+#about-header h1{
+    font-size: 3.0rem;
 }
 /* ABOUT PAGE END */ 
 
@@ -71,12 +79,15 @@ body{
 /* FOOTER */ 
 footer{
     height: 15vh;
-    background: #473522;
+    /* background: #473522; */ 
+    background: #29221b;
     color: #fff;
     display: flex;
     flex-direction: column; 
     justify-content: space-around;
-    align-items: center;
+    align-items: center; 
+    padding: 1rem 0;
+    border-top: 1px solid white;
 } 
 
 .footer-links{
@@ -88,12 +99,20 @@ footer{
 }
 .footer-social{
     flex-direction: row;
+} 
+small{
+    color: white;
+} 
+
+.nav-footer{
+    display: none;
 }
 /* FOOTER END */
 /* MOBILE FIRST SECTION  END*/ 
 
-
 /* MEDIA QUERIES */ 
+@media screen and (min-width: 768px){
+
 /* HOME */ 
 /* HOME END */ 
 
@@ -101,13 +120,35 @@ footer{
 /* PORTFOLIO END */ 
 
 /* ABOUT */ 
+    .about-wrap{
+        width:50%;
+    }
+    
 /* ABOUT END */ 
 
 /* SERVICES */ 
 /* SERVICES END */ 
 
 /* CONTACT */ 
-/* CONTACT END */
+/* CONTACT END */ 
+
+/* FOOTER */ 
+.nav-footer{
+    display: flex;
+    width: 100%;
+    justify-content: center
+} 
+
+.nav-footer-item{
+    margin:1rem;
+}
+
+
+/* FOOTER END */
+
+}
+
+
 
 /* Universal styling END */ 
 

@@ -1,4 +1,5 @@
 /* styling for the first nav */
+
 #nav-container{
     position: absolute;
     z-index: 1;
@@ -30,12 +31,7 @@
 } 
 
 #nav-bar li {
-
-    margin: 0;
-    font-size: 0.3rem;
-    z-index: 0;
-    background-color: rgba(41, 34, 27, .65); 
-    padding: 1.0rem; 
+    display: none;
 } 
 #nav-bar li a{
     margin:  0 0.8rem ;
@@ -48,18 +44,25 @@
     background-color: rgba(53, 44, 36, 0.65); 
 }  
 
-.selected{
-    background-color: red;
-}
 
 
-@media screen and (min-width: 768px){
+
+@media screen and (min-width: 828px){
     #nav-container{
         display: flex; 
         flex-direction: row; 
         justify-content: space-between;  
         background-color: rgba(41, 34, 27, .65);
-    } 
+    }  
+    #nav-bar li{
+    display: block;
+    margin: 0;
+    font-size: 0.3rem;
+    z-index: 0;
+    background-color: rgba(41, 34, 27, .65); 
+    padding: 1.0rem; 
+    }
+
     #brand{
         padding-left: 1rem;
     } 
