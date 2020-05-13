@@ -1,4 +1,11 @@
 /* styling for the first nav */
+:root{
+    --primary-color: rgba(41, 34, 27, .65); 
+    --Dark-br: #29221b;
+    --Light-bg: #FFF7e7; 
+    --Text-clr: #fff;
+}   
+
 
 #nav-container{
     position: absolute;

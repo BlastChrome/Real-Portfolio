@@ -1,7 +1,10 @@
 /* universal styling */
 :root{
     --primary-color: rgba(41, 34, 27, .65); 
-}
+    --Dark-br: #29221b;
+    --Light-bg: #FFF7e7; 
+    --Text-clr: #fff;
+}   
 
 *{
     text-decoration: none; 
@@ -12,7 +15,6 @@
     font-weight: 100;
 }  
 body{
-    /* min-width: 235px; */
     width: 100vw;
 } 
 /* MOBILE FIRST SECTION */
@@ -24,7 +26,7 @@ body{
     align-items: center; 
     justify-content: center; 
     height: 100vh;   
-    color: #fff; 
+    color: var(--Text-clr);
     z-index: 0;  
     background-color: var(--primary-color); 
     font-size: 1.2rem;
@@ -52,7 +54,7 @@ body{
     justify-content: center;
     width: 100%;
     height: 100%;
-    background: #FFF7e7;
+    background: var(--Light-bg);
     font-size: 1.1rem; 
     line-height: 2.5rem; 
     padding-bottom: 15vh;
@@ -72,21 +74,45 @@ body{
 }
 /* ABOUT PAGE END */ 
 
-/* PORTFOLIO PAGE */ 
+/* CONTACT PAGE */ 
+.contact-body-wrap{
+    display: flex; 
+    justify-content: center; 
+    background: url(/imgs/caspar-camille-rubin-fPkvU7RDmCo-unsplash.jpg) no-repeat center center/cover;
+    z-index: 0;
+}
+.contact-body{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 100vw; 
+    height: 100vh;
+    background: var(--Light-bg); 
+    z-index: 0;
+    background-color: var(--primary-color); 
+}
+.contact-forms-container{
+    border-radius: 1.2rem;
+    margin-top: 1.5rem;
+    height: 80%;
+    width: 80vw;
+    padding: 1.2rem;
+    background: var(--Light-bg);
+}
 
-/* PORTFOLIO PAGE END */
+
+/* CONTACT PAGE END */
 
 /* FOOTER */ 
 footer{
     height: 15vh;
-    /* background: #473522; */ 
-    background: #29221b;
-    color: #fff;
+    background: var(--Dark-br);
+    color: var(--Text-clr);
     display: flex;
     flex-direction: column; 
     justify-content: space-around;
     align-items: center; 
-    padding: 1rem 0;
+    padding: 2rem 0;
     border-top: 1px solid white;
 } 
 
@@ -108,6 +134,7 @@ small{
     display: none;
 }
 /* FOOTER END */
+
 /* MOBILE FIRST SECTION  END*/ 
 
 /* MEDIA QUERIES */ 
@@ -143,11 +170,7 @@ small{
     margin:1rem;
 }
 
-
 /* FOOTER END */
-
-}
-
 
 
 /* Universal styling END */ 
