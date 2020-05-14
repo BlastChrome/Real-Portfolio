@@ -122,6 +122,15 @@ body{
 textarea{
     resize: none;
 }
+#accept-wrap{
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+}
+#accept-wrap input{
+    margin: 0  1rem 0 0; 
+
+}
 
 #submit-wrap{
     width: 25%; 
@@ -199,6 +208,9 @@ small{
 .contact-forms-container-wrap{
     width: 50%;
 }
+#submit-wrap{
+    width: 15%; 
+}
 /* CONTACT END */ 
 
 /* FOOTER */ 
@@ -209,7 +221,6 @@ small{
 } 
 .nav-footer-item{
     margin:1rem;
-
 }
 
 /* FOOTER END */
