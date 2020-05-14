@@ -13,7 +13,8 @@
     margin: 0; 
     font-family: 'Catamaran', Arial, Helvetica, sans-serif;
     font-weight: 100;
-}  
+}
+
 body{
     width: 100vw;
 } 
@@ -224,3 +225,4 @@ small{
 }
 
 /* FOOTER END */
+};
