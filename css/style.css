@@ -79,6 +79,7 @@ body{
     justify-content: center; 
     background: url(/imgs/caspar-camille-rubin-fPkvU7RDmCo-unsplash.jpg) no-repeat center center/cover;
     z-index: 0;
+    
 }
 .contact-body{
     display: flex; 
@@ -134,7 +135,7 @@ textarea{
 }
 
 #submit-wrap{
-    width: 25%; 
+    width: 5rem;
     
 }
 
@@ -147,7 +148,7 @@ textarea{
 }
 #submit-btn:hover{
     background-color: rgb(53, 44, 36); 
-}
+}b
 .required-field{
     color: red;
 }
