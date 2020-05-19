@@ -73,6 +73,64 @@ body{
 }
 /* ABOUT PAGE END */ 
 
+/* SERVICES */
+.services-wrap{
+    background: rgb(219, 218, 218);
+}
+
+.services-header-wrap{
+    display: flex; 
+    flex-direction: column;  
+    justify-content: center; 
+    align-items: center; 
+    height: 30vh;
+    width: 100vw; 
+    background: var(--Dark-br);
+    color: white; 
+    font-size: 1.5rem; 
+    line-height: 3em;
+} 
+
+.services-main-body-wrap{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    background: var(--Light-bg);   
+}
+
+.services-item-wrap{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    background: rgb(255, 241, 195);  
+    box-shadow: 10px 10px 8px #888888;
+    width: 90%; 
+    margin-top: 2rem; 
+    height: 60vh;
+    padding: 1rem;
+    border-radius: 1px;
+}
+
+.services-text-wrap h1{
+    font-weight: 500;
+} 
+.services-text-wrap h3{
+    font-weight: 400;
+}
+
+.services-text-wrap p{
+    line-height: 1.4rem;
+}
+.services-text-wrap{
+    margin-top: 1rem;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+/* SERVICES END */
+
 /* CONTACT PAGE */ 
 .contact-body-wrap{
     display: flex; 
