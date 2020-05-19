@@ -131,6 +131,27 @@ body{
     align-items: center;
 }
 
+.contact-link-wrap{
+    width: 100%;
+    /* background: RED; */
+    margin-left: 1rem;
+    padding: 1rem;
+}
+.contact-text-disc{
+    width: 100%;
+} 
+
+ a{
+    color: white;
+}
+
+.contact-button-wrapper{
+ /* margin-left: 1rem;
+ margin-bottom: 1rem; */
+ width: 96%; 
+ color: white;
+}
+
 /* SERVICES END */
 
 /* CONTACT PAGE */ 
