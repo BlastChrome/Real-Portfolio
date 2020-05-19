@@ -13,12 +13,22 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-end;
     color: var(--Text-clr);  
     background: var(--Dark-br);
-    min-height: 8vh;
+    min-height: 8vh; 
 
 } 
+
+.nav-wrap{
+    display: flex; 
+    justify-content: space-around;
+    align-items: center ;
+    width: 75%;  
+}
+
+
 #brand{
     margin: 1rem 0; 
     font-size: 1.2rem; 
@@ -55,6 +65,14 @@
 
 
 @media screen and (min-width: 828px){
+    .hamburger-wrap{
+        display: none;
+    }
+    .nav-wrap{
+        width: 100%;
+        justify-content: space-between;
+    }
+
     #nav-container{
         display: flex; 
         flex-direction: row; 
