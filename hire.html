@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>contact</title>
+    <title>hire</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/nav-style-2.css" />
     <!-- imported from google fonts -->
@@ -26,7 +26,7 @@
           <li><a class="nav-item" href="/about.html">About</a></li>
           <li><a class="nav-item" href="/services.html">Services</a></li>
           <li><a class="nav-item" href="/contact.html">Contact</a></li>
-          <li><a class="nav-item" href="/portfolio.html">Portfolio</a></li>
+          <li><a class="nav-item" href="/hire.html">Hire Nick</a></li>
         </ul>
         <div class="hamburger-wrap">
           <i class="fas fa-bars fa-2x"></i>
@@ -34,49 +34,131 @@
       </div>
     </nav>
     <!-- NAVIGATION END -->
-        <!-- CONTACT BODY -->
-        <div class="contact-body-wrap">
-          <div class="contact-body">
-            <div class="contact-forms-container-wrap">
-              <form action="contacts.php" class="contact-forms"> 
-                <div class="form-wrap" id="contact-disc" >
-                    <p>Lets get in touch! What kind of project are you interested in?</p> 
-                </div>
-                <div class="form-wrap" id="form-header-wrap">
-                    <p>About You</p> 
-                    <hr>
-                </div>
-                <div class="form-wrap">
-                  <label for="name">Name:<span class="required-field">*</span></label> 
-                  <input type="text" id="name" name="name" placeholder="eg. Nicholas Jackson" required>
-                </div>
-                <div class="form-wrap">
-                  <label for="email">Email:<span class="required-field">*</span></label> 
-                  <input type="email" id="email" name="email" placeholder="yourname@email.com" required>
-                </div>
-                <div class="form-wrap">
-                  <label for="site">Your site:</label> 
-                  <input type="text"  id="site" name="site">
-                </div>
-                <div class="form-wrap">
-                  <label for="proposal">Message:<span class="required-field">*</span></label> 
-                  <textarea  rows="10" cols="25" id="proposal" name="proposal" ></textarea>
-                </div> 
-                <div class="form-wrap" id="accept-wrap">
-                    <input type="checkbox" id="acceptance"> 
-                    <label for="acceptance"><p><em>click here to receive further emails and updates!</em></p></label>
-                </div>
-                <div class="form-wrap" id="disclaimer-wrap"> 
-                    <p>Your information will remain undisclosed and anonymous</p>
-                </div>
-                <div class="form-wrap" id="submit-wrap">
-                  <button type="submit" class="submit-btn" id="submit-btn">SEND</button>
-                </div>
-              </form>
+    <!-- CONTACT BODY -->
+    <div class="contact-body-wrap">
+      <div class="contact-body">
+        <div class="contact-forms-container-wrap">
+          <form action="contacts.php" class="contact-forms">
+            <div class="form-wrap" id="contact-disc">
+              <p>
+                Lets get in touch! Fill out the following forms below to enquire
+                about hiring me. To learn about how I work and the value I can
+                bring to your project, please visit About or if you just want to
+                send a general message see my contact page.
+              </p>
             </div>
-          </div>
+            <div class="form-wrap" id="form-header-wrap">
+              <p>Your Specification</p>
+              <hr />
+            </div>
+            <div class="form-wrap">
+              <label for="name"
+                >Name:<span class="required-field">*</span></label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="eg. Nicholas Jackson"
+                required
+              />
+            </div>
+            <div class="form-wrap">
+              <label for="email"
+                >Email:<span class="required-field">*</span></label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="yourname@email.com"
+                required
+              />
+            </div>
+            <div class="form-wrap">
+              <label for="contact-method"
+                >Preffered contact:<span class="required-field">*</span></label
+              >
+              <input
+                type="text"
+                id="site"
+                name="site"
+                placeholder="email/phone/etc"
+                required
+              />
+            </div>
+            <div class="two-form-wrap">
+              <div class="your-site-wrap">
+                <label for="site"
+                  >Your site:<span class="required-field">*</span></label
+                >
+                <input type="text" id="site" name="site" />
+              </div>
+              <div class="hire-wrap">
+                <label for="hire">How did you hear about us?</label>
+                <input type="text" id="hire" name="hire" />
+              </div>
+            </div>
+            <!-- <div class="form-wrap">
+              <label for="proposal"
+                >Message:<span class="required-field">*</span></label
+              >
+              <textarea
+                rows="10"
+                cols="25"
+                id="proposal"
+                name="proposal"
+              ></textarea>
+            </div> -->
+            <div class="form-wrap" id="form-header-wrap">
+              <p>
+                Please specify a budget and ideal completion date (when you're
+                aiming for the website to go live or to have the front-end files
+                ready for back-end integration for example). This helps me
+                determine the best solution within your given circumstances.
+              </p>
+              <p>Project Details</p>
+              <hr />
+            </div>
+
+            <div class="two-form-wrap">
+              <div class="your-site-wrap">
+                <label for="site"
+                  >Budget:<span class="required-field">*</span></label
+                >
+                <input type="text" id="site" name="site" placeholder="$500" />
+              </div>
+              <div class="hire-wrap">
+                <label for="hire">Preffered completion date?</label>
+                <input type="" id="hire" name="hire" />
+              </div>
+            </div>
+            <div class="form-wrap">
+                <label for="proposal">Project Discription:<span class="required-field">*</span></label> 
+                <textarea  rows="10" cols="25" id="proposal" name="proposal" ></textarea>
+              </div> 
+            <div class="form-wrap" id="accept-wrap">
+              <input type="checkbox" id="acceptance" />
+              <label for="acceptance"
+                ><p>
+                  <em>click here to receive further emails and updates!</em>
+                </p></label
+              >
+            </div>
+            
+            <div class="form-wrap" id="disclaimer-wrap">
+              <p>Your information will remain undisclosed and anonymous</p>
+            </div>
+            <div class="form-wrap" id="submit-wrap">
+              <button type="submit" class="submit-btn" id="submit-btn">
+                SEND
+              </button>
+            </div>
+          </form>
         </div>
-        <!-- CONTACT BODY END -->
+      </div>
+    </div>
+    <!-- CONTACT BODY END -->
 
     <!-- FOOTER -->
     <footer>
@@ -114,6 +196,5 @@
       >
     </footer>
     <!-- FOOTER END -->
-
   </body>
 </html>

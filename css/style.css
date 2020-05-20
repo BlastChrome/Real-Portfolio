@@ -54,7 +54,8 @@ body{
 }
 .about-body{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     height: 100%;
     background: var(--Light-bg);
@@ -268,6 +269,36 @@ textarea{
 
 /* CONTACT PAGE END */
 
+
+/* HIRE */ 
+.two-form-wrap{
+    width: 100%;
+    /* display: flex; 
+    /* justify-content: space-around;   
+    align-items: center; */ 
+    /* background: red; */
+    display: flex; 
+    margin-left: 1rem;
+
+}  
+
+.hire-wrap{
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+} 
+
+.your-site-wrap{
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+} 
+
+.two-form-wrap input{
+    width: 85%;
+}
+
+/* HIRE END */
 /* FOOTER */ 
 footer{
     height: 15vh;
