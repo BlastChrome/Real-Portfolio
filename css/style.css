@@ -4,6 +4,9 @@
     --Dark-br: #29221b;
     --Light-bg: #FFF7e7; 
     --Text-clr: #fff;
+    --Vannil-bg: rgb(255, 241, 195);  
+    --shadow-drk: 5px 5px 5px #888888; 
+    --random-blue: 086788
 }   
 
 *{
@@ -74,8 +77,13 @@ body{
 /* ABOUT PAGE END */ 
 
 /* SERVICES */
+#services-body{
+    width: 100%;
+}
 .services-wrap{
-    background: rgb(219, 218, 218);
+    width: 100%;
+    background: rgb(219, 218, 218); 
+    ;
 }
 
 .services-header-wrap{
@@ -84,12 +92,17 @@ body{
     justify-content: center; 
     align-items: center; 
     height: 30vh;
-    width: 100vw; 
+    width: 100%; 
     background: var(--Dark-br);
-    color: white; 
+    color: var(--Text-clr); 
     font-size: 1.5rem; 
     line-height: 3em;
-} 
+}  
+
+.services-header-wrap p{
+    color: gray;
+}
+
 
 .services-main-body-wrap{
     display: flex; 
@@ -97,20 +110,21 @@ body{
     justify-content: center; 
     align-items: center; 
     background: var(--Light-bg);   
+    width: 100%; 
 }
 
 .services-item-wrap{
     display: flex; 
     flex-direction: column; 
     align-items: center;
-    background: rgb(255, 241, 195);  
-    box-shadow:  5px 5px 5px #888888;
-    width: 90%; 
+    background: var(--Vannil-bg);
+    box-shadow: var(--shadow-drk);
+    width: 75%; 
     margin-top: 2rem;
     margin-bottom: 2rem; 
-    height: 60vh;
-    padding: 1rem;
-    border-radius: 1px;
+    padding: 2rem;
+    border-radius: 5%;
+    border-top: 2px solid var(--Dark-br);
 }
 
 .services-text-wrap h1{
@@ -123,6 +137,7 @@ body{
 
 .services-text-wrap p{
     line-height: 1.4rem;
+    font-size: 1.1rem;
 }
 .services-text-wrap{
     margin-top: 1rem;
@@ -131,26 +146,42 @@ body{
     align-items: center;
 }
 
-.contact-link-wrap{
-    width: 100%;
-    /* background: RED; */
+.contact-link-wrap{    
+    font-size: 1.4rem; 
+    color: grey;
     margin-left: 1rem;
     padding: 1rem;
 }
+
 .contact-text-disc{
     width: 100%;
+    text-align: center;
 } 
 
- a{
-    color: white;
+.contact-button-wrapper{    
+ width: 96%;  
+}  
+
+#services-submit-btn{
+    color: var(--primary-color); 
+    background: var(--Vannil-bg);
+    border: 2px solid var(--Dark-br);
+} 
+#services-submit-btn a{
+    color: var(--Dark-br);
+} 
+
+#services-submit-btn:hover{
+    background: var(--Dark-br); 
+    border: 2px solid var(--Vannil-bg);
+} 
+#services-submit-btn a:hover{
+    color: var(--Text-clr);
+}
+a{
+    color: var(--Text-clr);
 }
 
-.contact-button-wrapper{
- /* margin-left: 1rem;
- margin-bottom: 1rem; */
- width: 96%; 
- color: white;
-}
 
 /* SERVICES END */
 
@@ -220,16 +251,16 @@ textarea{
     
 }
 
-#submit-btn{
+.submit-btn{
     background: var(--Dark-br); 
     color: var(--Light-bg);
     font-size: 1.5rem;
     padding: 0.5rem;
     border: none;
 }
-#submit-btn:hover{
+.submit-btn:hover{
     background-color: rgb(53, 44, 36); 
-}b
+}
 .required-field{
     color: red;
 }
@@ -247,6 +278,7 @@ footer{
     align-items: center; 
     padding: 2rem 0;
     border-top: 1px solid white;
+
 } 
 .footer-links{
     display: flex; 
@@ -256,7 +288,8 @@ footer{
     color: white;
 }
 .footer-social{
-    flex-direction: row;
+    flex-direction: row; 
+    margin: auto;
 } 
 small{
     color: white;
@@ -284,7 +317,25 @@ small{
 }   
 /* ABOUT END */ 
 
-/* SERVICES */ 
+/* SERVICES */  
+
+.services-item-wrap{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 55%;
+    padding: 3rem; 
+
+}
+.services-icon-wrap{
+    height: 200%; 
+}
+.services-text-wrap{
+    width: 50%;
+} 
+.services-text-wrap p, .services-text-wrap h3{
+    font-size: 1.5rem;
+}
 /* SERVICES END */ 
 
 /* CONTACT */ 
@@ -300,11 +351,14 @@ small{
 .nav-footer{
     display: flex;
     width: 100%;
-    justify-content: center
+    justify-content: center 
+
 } 
 .nav-footer-item{
     margin:1rem;
 }
-
+.nav-footer{
+    margin: 1rem;
+}
 /* FOOTER END */
 };
