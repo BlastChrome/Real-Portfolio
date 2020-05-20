@@ -29,7 +29,7 @@ body{
     display: flex; 
     align-items: center; 
     justify-content: center; 
-    height: 100vh;   
+    height: 120vh;   
     color: var(--Text-clr);
     z-index: 0;  
     background-color: var(--primary-color); 
@@ -125,13 +125,14 @@ body{
     padding: 2rem;
     border-radius: 5%;
     border-top: 2px solid var(--Dark-br);
+    font-size: 1.5rem;
 }
 
 .services-text-wrap h1{
     font-weight: 500;
 } 
 .services-text-wrap h3{
-    font-weight: 400;
+    font-weight: 700;
     margin: 1rem;
 }
 
@@ -140,7 +141,7 @@ body{
     font-size: 1.1rem;
 }
 .services-text-wrap{
-    margin-top: 1rem;
+    margin-bottom: 1rem;
     display: flex; 
     flex-direction: column; 
     align-items: center;
@@ -321,10 +322,10 @@ small{
 
 .services-item-wrap{
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
-    width: 55%;
-    padding: 3rem; 
+    width: 65%;
+    padding: 5rem; 
 
 }
 .services-icon-wrap{
@@ -334,7 +335,8 @@ small{
     width: 50%;
 } 
 .services-text-wrap p, .services-text-wrap h3{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    line-height: 4rem;
 }
 /* SERVICES END */ 
 
