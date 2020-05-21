@@ -38,13 +38,13 @@
     <div class="contact-body-wrap">
       <div class="contact-body">
         <div class="contact-forms-container-wrap">
-          <form action="contacts.php" class="contact-forms">
+          <form action="hire.php" class="contact-forms">
             <div class="form-wrap" id="contact-disc">
               <p>
                 Lets get in touch! Fill out the following forms below to enquire
                 about hiring me. To learn about how I work and the value I can
-                bring to your project, please visit About or if you just want to
-                send a general message see my contact page.
+                bring to your project, please visit <a class="hire-links" href="/about.html">about</a> or if you just want to
+                send a general message see my  <a class="hire-links" href="/contact.html">contact</a> page.
               </p>
             </div>
             <div class="form-wrap" id="form-header-wrap">
@@ -81,8 +81,8 @@
               >
               <input
                 type="text"
-                id="site"
-                name="site"
+                id="contact-method"
+                name="contact-method"
                 placeholder="email/phone/etc"
                 required
               />
@@ -99,25 +99,12 @@
                 <input type="text" id="hire" name="hire" />
               </div>
             </div>
-            <!-- <div class="form-wrap">
-              <label for="proposal"
-                >Message:<span class="required-field">*</span></label
-              >
-              <textarea
-                rows="10"
-                cols="25"
-                id="proposal"
-                name="proposal"
-              ></textarea>
-            </div> -->
-            <div class="form-wrap" id="form-header-wrap">
-              <p>
-                Please specify a budget and ideal completion date (when you're
-                aiming for the website to go live or to have the front-end files
-                ready for back-end integration for example). This helps me
-                determine the best solution within your given circumstances.
-              </p>
-              <p>Project Details</p>
+            <div class="form-wrap" >
+                <p id="details-header">Project Details</p>
+                  <p id="details-disc">
+                    Please specify a budget and ideal completion date. This helps me
+                    determine the best solution that works for you.
+                  </p>
               <hr />
             </div>
 
