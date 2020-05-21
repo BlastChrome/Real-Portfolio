@@ -79,7 +79,6 @@ body{
 /* MOBILE FIRST SECTION */
 
 /* HOME PAGE */
-/* Banner */  
 #banner-container{
     display: flex; 
     align-items: center; 
@@ -96,8 +95,7 @@ body{
     background: url(/imgs/caspar-camille-rubin-fPkvU7RDmCo-unsplash.jpg) no-repeat center center/cover;
     z-index: 0;
 }   
-/* Banner end */
-/* HOME PAGE END */ 
+
 
 /* ABOUT PAGE */ 
 .about-item{
@@ -130,7 +128,6 @@ body{
 #about-header h1{
     font-size: 3.0rem;
 }
-/* ABOUT PAGE END */ 
 
 /* SERVICES */
 #services-body{
@@ -165,7 +162,7 @@ body{
     flex-direction: column; 
     justify-content: center; 
     align-items: center; 
-    background: var(--Light-bg);   
+    background: var(--Text-clr);   
     width: 100%; 
 }
 
@@ -173,7 +170,7 @@ body{
     display: flex; 
     flex-direction: column; 
     align-items: center;
-    background: var(--Vannil-bg);
+    background: var(--Light-bg);
     box-shadow: var(--shadow-drk);
     width: 75%; 
     margin-top: 2rem;
@@ -240,7 +237,6 @@ a{
 }
 
 
-/* SERVICES END */
 
 /* CONTACT PAGE */ 
 .contact-body-wrap{
@@ -322,8 +318,6 @@ textarea{
     color: red;
 }
 
-/* CONTACT PAGE END */
-
 
 /* HIRE */ 
 .two-form-wrap{
@@ -390,12 +384,13 @@ small{
     display: none;
 }
 
-/* FOOTER END */
 
-/* MOBILE FIRST SECTION  END*/ 
+
 
 /* MEDIA QUERIES */ 
 @media screen and (min-width: 768px){
+
+    /* NAV */
     .hamburger-wrap{
         display: none;
     }
@@ -426,17 +421,13 @@ small{
         padding-right: 1rem;     
     }
 
-/* HOME */ 
-/* HOME END */ 
-
-/* PORTFOLIO  */ 
-/* PORTFOLIO END */ 
+ 
 
 /* ABOUT */ 
 .about-wrap{
     width:50%;
 }   
-/* ABOUT END */ 
+
 
 /* SERVICES */  
 
@@ -458,7 +449,7 @@ small{
     font-size: 1.7rem;
     line-height: 4rem;
 }
-/* SERVICES END */ 
+
 
 /* CONTACT */ 
 .contact-forms-container-wrap{
@@ -466,8 +457,7 @@ small{
 }
 #submit-wrap{
     width: 15%; 
-}
-/* CONTACT END */ 
+} 
 
 /* FOOTER */ 
 .nav-footer{
@@ -482,5 +472,4 @@ small{
 .nav-footer{
     margin: 1rem;
 }
-/* FOOTER END */
 };
