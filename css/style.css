@@ -20,11 +20,9 @@
 
 .Gone{
     display: none;
+    transition: 0.2s;
 }
 
-.hamburger-wrap{
-
-}
 #nav-container{
     position: top;
     z-index: 1;
@@ -41,14 +39,14 @@
 
 .nav-wrap{
     display: flex; 
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center ;
-    width: 75%;  
+    width: 100%;  
 }
 
 
 #brand{
-    margin: 1rem 0; 
+    margin: 1rem 1rem; 
     font-size: 1.2rem; 
     text-transform: uppercase; 
     color: var(--Text-clr);
@@ -81,6 +79,10 @@
     background-color: rgba(53, 44, 36, 0.65); 
 } 
 
+.hamburger-wrap{
+    margin: 0 1.8rem;
+}
+
 body{
     width: 100vw;
 } 
@@ -107,8 +109,16 @@ body{
     font-size: 1.4rem;
     /* border-top:1px solid white; */
 }
+
+.mb-nav-container:hover{
+    background: #362e25;
+}
 .mb-nav-container:nth-child(2n-1){
     background: #221d17; 
+} 
+
+.mb-nav-container:nth-child(2n-1):hover{
+    background: #362e25;
 }
 
 #banner-container{
@@ -421,7 +431,7 @@ small{
 
 
 /* MEDIA QUERIES */ 
-@media screen and (min-width: 848px){
+@media screen and (min-width: 855px){
 
     .mobile-nav-container{
         display: none;
