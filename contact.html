@@ -60,7 +60,7 @@
         <div class="contact-body-wrap">
           <div class="contact-body">
             <div class="contact-forms-container-wrap">
-              <form action="/php/contacts.php" class="contact-forms" method="post"> 
+              <form action="includes/contacts.inc.php" class="contact-forms" method="post"> 
                 <div class="form-wrap" id="contact-disc" >
                     <p>Lets get in touch! What kind of project are you interested in?</p> 
                 </div>
@@ -70,7 +70,7 @@
                 </div>
                 <div class="form-wrap">
                   <label for="name">Name:<span class="required-field">*</span></label> 
-                  <input type="text" id="name" name="name" placeholder="eg. Nicholas Jackson" required>
+                  <input type="text" id="name" name="name" placeholder="eg. Nicholas Jackson" required >
                 </div>
                 <div class="form-wrap">
                   <label for="email">Email:<span class="required-field">*</span></label> 
@@ -82,7 +82,7 @@
                 </div>
                 <div class="form-wrap">
                   <label for="proposal">Message:<span class="required-field">*</span></label> 
-                  <textarea  rows="10" cols="25" id="proposal" name="proposal" ></textarea>
+                  <textarea  rows="10" cols="25" id="proposal" name="proposal" required></textarea>
                 </div> 
                 <div class="form-wrap" id="accept-wrap">
                     <input type="checkbox" id="acceptance"> 
@@ -92,7 +92,7 @@
                     <p>Your information will remain undisclosed and anonymous</p>
                 </div>
                 <div class="form-wrap" id="submit-wrap">
-                  <button type="submit" class="submit-btn" id="submit-btn">SEND</button>
+                  <button type="submit" class="submit-btn" id="submit-btn" name="cSubmit">SEND</button>
                 </div>
               </form>
             </div>

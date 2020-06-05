@@ -7,9 +7,9 @@ $dbPassword = "";
 $dbName = "portfoliodb"; 
 
 //using myswli_connect to create a detabase connection
-$conn = mysqli_connect($servername, $dBUsername, $dBPassword, $dBName);  
+$conn = mysqli_connect($servername, $dbUsername, $dbPassword, $dbName);  
 
 //Checking for connection failure
 if(!$conn){
-    die("Connection Failed: ".mysqli_coonect_error());
+    die("Connection Failed: ".mysqli_connect_error());
 }
