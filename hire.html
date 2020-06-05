@@ -61,7 +61,7 @@
     <div class="contact-body-wrap">
       <div class="contact-body">
         <div class="contact-forms-container-wrap">
-          <form action="hire.php" class="contact-forms">
+          <form action="includes/hire.inc.php" class="contact-forms" method="POST">
             <div class="form-wrap" id="contact-disc">
               <p>
                  Fill out the following forms below to enquire
@@ -75,51 +75,54 @@
               <hr />
             </div>
             <div class="form-wrap">
-              <label for="name"
+              <label for="hname"
                 >Name:<span class="required-field">*</span></label
               >
               <input
                 type="text"
                 id="name"
-                name="name"
-                placeholder="eg. Nicholas Jackson"
+                name="hname"
+                placeholder="eg. Nicholas Jackson" 
                 required
+
               />
             </div>
             <div class="form-wrap">
-              <label for="email"
+              <label for="hemail"
                 >Email:<span class="required-field">*</span></label
               >
               <input
                 type="email"
                 id="email"
-                name="email"
-                placeholder="yourname@email.com"
+                name="hemail"
+                placeholder="yourname@email.com" 
                 required
+                
               />
             </div>
             <div class="form-wrap">
-              <label for="contact-method"
+              <label for="hcontact"
                 >Preffered contact:<span class="required-field">*</span></label
               >
               <input
                 type="text"
                 id="contact-method"
-                name="contact-method"
-                placeholder="email/phone/etc"
+                name="hcontact"
+                placeholder="email/phone/etc" 
                 required
+                
               />
             </div>
             <div class="two-form-wrap">
               <div class="your-site-wrap">
-                <label for="site"
-                  >Your site:<span class="required-field">*</span></label
+                <label for="hsite"
+                  >Your site:</label
                 >
-                <input type="text" id="site" name="site" required />
+                <input type="text" id="site" name="hsite"  />
               </div>
               <div class="hire-wrap">
-                <label for="hire">How did you hear about us?</label>
-                <input type="text" id="hire" name="hire" />
+                <label for="hhear">How did you hear about us?</label>
+                <input type="text" id="hire" name="hhear" />
               </div>
             </div>
             <div class="form-wrap" >
@@ -133,19 +136,19 @@
 
             <div class="two-form-wrap">
               <div class="your-site-wrap">
-                <label for="site"
+                <label for="hprice"
                   >Budget:<span class="required-field">*</span></label
                 >
-                <input type="text" id="site" name="site" placeholder=" 500.00 USD" />
+                <input type="text" id="site" name="hprice" placeholder=" 500.00 USD" />
               </div>
               <div class="hire-wrap">
-                <label for="hire">Preffered completion date?</label>
-                <input type="" id="hire" name="hire" />
+                <label for="hdate">Preffered completion date?</label>
+                <input type="" id="hire" name="hdate" />
               </div>
             </div>
             <div class="form-wrap">
-                <label for="proposal">Project Discription:<span class="required-field">*</span></label> 
-                <textarea  rows="10" cols="25" id="proposal" name="proposal" ></textarea>
+                <label for="hproposal">Project Discription:<span class="required-field">*</span></label> 
+                <textarea  rows="10" cols="25" id="proposal" name="hproposal" ></textarea>
               </div> 
             <div class="form-wrap" id="accept-wrap">
               <input type="checkbox" id="acceptance" />
@@ -160,7 +163,7 @@
               <p>Your information will remain undisclosed and anonymous</p>
             </div>
             <div class="form-wrap" id="submit-wrap">
-              <button type="submit" class="submit-btn" id="submit-btn">
+              <button type="submit" class="submit-btn" id="submit-btn" name="hSubmit">
                 SEND
               </button>
             </div>

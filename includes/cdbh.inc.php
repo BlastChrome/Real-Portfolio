@@ -1,5 +1,6 @@
 <?php
 
+
 //Variables for connecting to the local server
 $servername = "localhost";  
 $dbUsername = "root"; 
