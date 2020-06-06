@@ -134,7 +134,7 @@ body{
     z-index: 1;
 }
 .banner-wrap{
-    background: url('../imgs/caspar-camille-rubin-fPkvU7RDmCo-unsplash.jpg') no-repeat center center/cover;
+    background: url(../imgs/caspar-camille-rubin-fPkvU7RDmCo-unsplash.jpg) no-repeat center center/cover;
     z-index: 0;
 }   
 
@@ -284,7 +284,8 @@ a{
 .contact-body-wrap{
     display: flex; 
     justify-content: center; 
-    background: url('../imgs/caspar-camille-rubin-fPkvU7RDmCo-unsplash.jpg') no-repeat center center/cover;
+    /* background: url('../imgs/caspar-camille-rubin-fPkvU7RDmCo-unsplash.jpg') no-repeat center center/cover; */ 
+    background: url("../imgs/caspar-camille-rubin-fPkvU7RDmCo-unsplash.jpg") no-repeat center center/cover;
     z-index: 0;
     
 }
